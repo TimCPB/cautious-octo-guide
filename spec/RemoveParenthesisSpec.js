@@ -1,5 +1,5 @@
-describe("removeParenthesis", function(){
+describe("removeParentheses", function(){
     it("returns a string without parenthesis", function() {
-        expect(removeParenthesis("Hello()")).toEqual("Hello")
+        expect(removeParentheses("Hello()")).toEqual("Hello")
     })
 })
