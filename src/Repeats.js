@@ -1,18 +1,12 @@
 function repeats(array){
     
-    newArray = []
+    var sum = 0
     sortedArray = array.sort()
     sortedArray.forEach((x, i) => {
         if(x !== sortedArray[i + 1] && x !== sortedArray[i -1]){
-            newArray.push(x)
+            sum += x
         }
     })
-    
-    var sum = 0
-
-    newArray.forEach(x =>
-        sum += x
-      )
 
     return sum
 };
