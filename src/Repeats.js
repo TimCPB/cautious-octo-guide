@@ -1,3 +1,9 @@
 function repeats(array){
-    return array[0] + array[1]
+    var sum = 0
+
+    array.forEach(x =>
+        sum += x
+      )
+
+    return sum
 };
