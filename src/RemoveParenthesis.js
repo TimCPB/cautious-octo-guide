@@ -9,7 +9,8 @@ function removeParentheses(s){
     // return newArray.join('')
     var a = s.indexOf("(")
     var b = s.indexOf(")")
-    var parenthesesContent = s.substr(a, b)
+    var parenthesesContent = s.substr(a, b - 1)
+    console.log(parenthesesContent)
     var result = s.replace(parenthesesContent, "")
     return result
     
