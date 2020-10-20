@@ -10,4 +10,8 @@ describe("repeats function", function() {
     it("returns 15 from [4,5,7,5,4,8]", function() {
         expect(repeats([4,5,7,5,4,8])).toEqual(15)
     });
+
+    it("returns 22 from [5, 17, 18, 11, 13, 18, 11, 13]", function() {
+        expect(repeats([5, 17, 18, 11, 13, 18, 11, 13])).toEqual(22)
+    });
 });
