@@ -5,4 +5,7 @@ describe("duplicateEncoder", function(){
     it("replaces recurring letters with ')'", function() {
         expect(duplicateEncode("recede")).toEqual("()()()")
     })
+    it("ignores case", function() {
+        expect(duplicateEncode("Success")).toEqual(")())())")
+    })
 })
