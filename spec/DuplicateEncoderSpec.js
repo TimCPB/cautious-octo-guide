@@ -11,4 +11,7 @@ describe("duplicateEncoder", function(){
     it("encodes non-letter characters", function() {
         expect(duplicateEncode("(( @")).toEqual("))((")
     })
+    it("encodes a mix of non-letter characters and letters", function() {
+        expect(duplicateEncode("HH)HHHwGPm")).toEqual("))()))((((")
+    })
 })

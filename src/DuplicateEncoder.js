@@ -1,6 +1,7 @@
 function duplicateEncode(word) {
+    let array = word.toLowerCase().split("")
     let encodedArray = []
-    word.toLowerCase().split("").forEach(x => {
+    array.forEach(x => {
         if (word.indexOf(x) === word.lastIndexOf(x)) {
             encodedArray.push("(")
         } else {
