@@ -1,12 +1,11 @@
 function duplicateEncode(word) {
-    let array = word.toLowerCase().split("")
-    let newArray = []
-    array.forEach(x => {
+    let encodedArray = []
+    word.toLowerCase().split("").forEach(x => {
         if (word.indexOf(x) === word.lastIndexOf(x)) {
-            newArray.push("(")
+            encodedArray.push("(")
         } else {
-            newArray.push(")")
+            encodedArray.push(")")
         }
     })
-    return newArray.join("")
+    return encodedArray.join("")
 }
