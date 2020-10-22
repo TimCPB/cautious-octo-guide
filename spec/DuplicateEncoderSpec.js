@@ -8,4 +8,7 @@ describe("duplicateEncoder", function(){
     it("ignores case", function() {
         expect(duplicateEncode("Success")).toEqual(")())())")
     })
+    it("encodes non-letter characters", function() {
+        expect(duplicateEncode("(( @")).toEqual("))((")
+    })
 })
