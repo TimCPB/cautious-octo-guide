@@ -4,21 +4,17 @@ function removeParentheses(s){
     var c = s.indexOf("(", a + 1)
     var d = s.indexOf(")")
     if (c > d) {
-        var newString = s
-        while (newString.indexOf("(") !== -1) {
-            var f = newString.indexOf("(")
-            var g = newString.indexOf(")")
-            var content = newString.substring(f, g + 1)
-            newString = newString.replace(content, "")
+        while (s.indexOf("(") !== -1) {
+            var f = s.indexOf("(")
+            var g = s.indexOf(")")
+            var content = s.substring(f, g + 1)
+            s = s.replace(content, "")
         }
-        return newString
+        return s
     } 
     else {
         var parenthesesContent = s.substring(a, b + 1)
-        console.log(parenthesesContent)
-        console.log(a, b)
-        var result = s.replace(parenthesesContent, "")
-        return result
+        return s.replace(parenthesesContent, "")
     }
     
 }
