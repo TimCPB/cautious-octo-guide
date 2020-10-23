@@ -3,6 +3,6 @@ describe("Multiples", function() {
         expect(solution(4)).toEqual(3)
     })
     it("returns the sum of 3 and 5", function(){
-        expect(solution(5)).toEqual(5)
+        expect(solution(6)).toEqual(5)
     })
 })
