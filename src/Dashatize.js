@@ -4,13 +4,16 @@ function dashatize(num) {
     var initialArrayLength = initialArray.length
     var newArray = []
     initialArray.forEach((x, i) => {
-        if(x % 2 !== 0 && i !== initialArrayLength - 1) {
+        if(x % 2 !== 0 && i !== initialArrayLength - 1 && i !== 0) {
             newArray.push(`-${x}-`)
         } else if(x % 2 !== 0 && i === initialArrayLength - 1) {
             newArray.push(`-${x}`)
+        } else if(x % 2 !== 0 && i === 0) {
+            newArray.push(`${x}-`)
         } else {
             newArray.push(x)
         }
     });
+    console.log(newArray)
     return newArray.join("")
 }

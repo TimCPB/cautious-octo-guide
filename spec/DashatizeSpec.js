@@ -4,5 +4,9 @@ describe("Dashatize", function() {
     })
     it("inserts a dash before and after an odd integer", function(){
         expect(dashatize(274)).toEqual("2-7-4")
+        expect(dashatize(86320)).toEqual("86-3-20")
+    })
+    it("does not insert a dash before the first digit", function(){
+        expect(dashatize(544)).toEqual("5-44")
     })
 })
