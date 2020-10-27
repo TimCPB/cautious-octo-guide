@@ -1,4 +1,7 @@
 function dashatize(num) {
+    if(isNaN(num)) {
+        return num.toString()
+    }
     var initialString = Math.abs(num).toString()
     var initialArray = initialString.split("")
     var initialArrayLength = initialArray.length
