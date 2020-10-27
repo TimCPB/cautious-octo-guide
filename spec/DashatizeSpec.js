@@ -9,4 +9,7 @@ describe("Dashatize", function() {
     it("does not insert a dash before the first digit", function(){
         expect(dashatize(544)).toEqual("5-44")
     })
+    it("treats negative numbers as if they were positive", function(){
+        expect(dashatize(-1)).toEqual("1")
+    })
 })
