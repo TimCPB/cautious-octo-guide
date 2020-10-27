@@ -4,14 +4,14 @@ function dashatize(num) {
     }
     var initialString = Math.abs(num).toString()
     var initialArray = initialString.split("")
-    var initialArrayLength = initialArray.length
+    var lastIndex = initialArray.length - 1
     var newArray = []
     initialArray.forEach((x, i) => {
-        if(x % 2 !== 0 && i !== initialArrayLength - 1 && i !== 0) {
+        if(x % 2 !== 0 && i !== lastIndex && i !== 0) {
             newArray.push(`-${x}-`)
-        } else if(x % 2 !== 0 && i === initialArrayLength - 1 && i !== 0) {
+        } else if(x % 2 !== 0 && i === lastIndex && i !== 0) {
             newArray.push(`-${x}`)
-        } else if(x % 2 !== 0 && i === 0 && i !== initialArrayLength - 1) {
+        } else if(x % 2 !== 0 && i === 0 && i !== lastIndex) {
             newArray.push(`${x}-`)
         } else {
             newArray.push(x)
