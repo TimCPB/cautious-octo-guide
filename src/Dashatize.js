@@ -17,5 +17,17 @@ function dashatize(num) {
             newArray.push(x)
         }
     });
-    return newArray.join("")
+    console.log(newArray)
+    var finalString = _removeExcessDashes(newArray.join(""))
+    return finalString
+}
+
+function _removeExcessDashes(string) {
+    var array = string.split("")
+    array.map((x, i) => {
+        if (x === "-" && array[i - 1] === "-") {
+            array.splice(i, 1)
+        }
+    })
+    return array.join("")
 }
