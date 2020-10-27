@@ -15,4 +15,7 @@ describe("Dashatize", function() {
     it("only adds dashes to integers", function(){
         expect(dashatize(NaN)).toEqual("NaN")
     })
+    it("never inserts consecutive dashes", function(){
+        expect(dashatize(5311)).toEqual("5-3-1-1")
+    })
 })
