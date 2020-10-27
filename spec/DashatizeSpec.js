@@ -12,4 +12,7 @@ describe("Dashatize", function() {
     it("treats negative numbers as if they were positive", function(){
         expect(dashatize(-1)).toEqual("1")
     })
+    it("only adds dashes to integers", function(){
+        expect(dashatize(NaN)).toEqual("NaN")
+    })
 })
