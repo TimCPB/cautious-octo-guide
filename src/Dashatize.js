@@ -7,19 +7,17 @@ function dashatize(num) {
     var lastIndex = initialArray.length - 1
     var newArray = []
     initialArray.forEach((x, i) => {
-        if(x % 2 !== 0 && i !== lastIndex && i !== 0) {
+        if(_isOddElement(x, i, lastIndex)) {
             newArray.push(`-${x}-`)
-        } else if(x % 2 !== 0 && i === lastIndex && i !== 0) {
+        } else if(_lastElementIsOdd(x, i, lastIndex)) {
             newArray.push(`-${x}`)
-        } else if(x % 2 !== 0 && i === 0 && i !== lastIndex) {
+        } else if(_firstElementIsOdd(x, i, lastIndex)) {
             newArray.push(`${x}-`)
         } else {
             newArray.push(x)
         }
     });
-    console.log(newArray)
-    var finalString = _removeExcessDashes(newArray.join(""))
-    return finalString
+    return _removeExcessDashes(newArray.join(""))
 }
 
 function _removeExcessDashes(string) {
@@ -30,4 +28,22 @@ function _removeExcessDashes(string) {
         }
     })
     return array.join("")
+}
+
+function _isOddElement(element, index, lastArrayIndex){
+    if (element % 2 !== 0 && index !== lastArrayIndex && index !== 0) {
+        return true
+    } 
+}
+
+function _lastElementIsOdd(element, index, lastArrayIndex){
+    if (element % 2 !== 0 && index === lastArrayIndex && index !== 0) {
+        return true
+    } 
+}
+
+function _firstElementIsOdd(element, index, lastArrayIndex){
+    if (element % 2 !== 0 && index !== lastArrayIndex && index === 0) {
+        return true
+    } 
 }
