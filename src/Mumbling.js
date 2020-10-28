@@ -1,21 +1,17 @@
 function accum(s) {
-  const wordArray = s.split("")
-  let newWord = []
-  let newNewWord = []
+    const wordArray = s.split("")
 
-    wordArray.forEach((letter, index) => {
-        console.log(letter, index)
-      let newElement = []
-      for(let i = 0; i < (index + 1); i++) {
-          newElement.push(letter.toLowerCase())
-      }
-      newWord.push(newElement.join(""))
+    let newWord = wordArray.map((letter, index) => {
+        let newElement = []
+        for(let i = 0; i < (index + 1); i++) {
+            newElement.push(letter.toLowerCase())
+        }
+        return newElement.join("")
     })
 
-    newWord.forEach(word => {
-      let wordCapitalized = word.charAt(0).toUpperCase() + word.slice(1)
-     newNewWord.push(wordCapitalized)
+    let newNewWord = newWord.map(word => {
+        return word.charAt(0).toUpperCase() + word.slice(1)
     })
 
-  return newNewWord.join("-")
+    return newNewWord.join("-")
 }
