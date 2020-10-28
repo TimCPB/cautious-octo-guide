@@ -1,10 +1,15 @@
 function getCount(str) {
     var vowelsCount = 0;
     var vowels = ["a", "e", "i", "o", "u"]
+    var arrayFromString = str.split("")
 
-    if(vowels.includes(str)){
-        vowelsCount++
-    }
+    arrayFromString.forEach(letter => {
+        if(vowels.includes(letter)){
+            vowelsCount++
+        }
+    })
+
+    
     
     return vowelsCount;
   }
