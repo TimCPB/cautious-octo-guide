@@ -5,4 +5,7 @@ describe("GetCount", function() {
     it("Counts the letter e", function() {
         expect(getCount("e")).toEqual(1)
     })
+    it("Counts the letter i", function() {
+        expect(getCount("i")).toEqual(1)
+    })
 })
