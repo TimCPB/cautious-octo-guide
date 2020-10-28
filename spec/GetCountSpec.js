@@ -17,4 +17,7 @@ describe("GetCount", function() {
     it("only contains a consonant", function(){
         expect(getCount("b")).toEqual(0)
     })
+    it("counts a vowel from a string of multiple letters", function(){
+        expect(getCount("ab")).toEqual(1)
+    })
 })
