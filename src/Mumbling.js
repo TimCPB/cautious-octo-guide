@@ -1,3 +1,3 @@
 function accum(s) {
-  return "A"
+    return s
 }
