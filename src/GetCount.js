@@ -1,7 +1,7 @@
 function getCount(str) {
     var vowelsCount = 0;
     
-    if(str = "a") {
+    if(str === "a") {
         vowelsCount++
     }
     
