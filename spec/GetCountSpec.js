@@ -14,5 +14,7 @@ describe("GetCount", function() {
     it("Counts the letter u", function() {
         expect(getCount("u")).toEqual(1)
     })
-
+    it("only contains a consonant", function(){
+        expect(getCount("b")).toEqual(0)
+    })
 })
