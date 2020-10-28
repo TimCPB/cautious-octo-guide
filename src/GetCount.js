@@ -1,7 +1,9 @@
 function getCount(str) {
     var vowelsCount = 0;
     
-    // enter your majic here
+    if(str = "a") {
+        vowelsCount++
+    }
     
     return vowelsCount;
   }
