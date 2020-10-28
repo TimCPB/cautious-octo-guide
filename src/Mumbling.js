@@ -1,13 +1,19 @@
 function accum(s) {
   const wordArray = s.split("")
   let newWord = []
+  console.log(wordArray)
 
-  if(s.length > 1){
     wordArray.forEach((letter, index) => {
-      newWord.push(letter)
+        console.log(letter, index)
+      // input 
+      //push letter x (index + 1)
+      // var newElement = 
+      let newElement = []
+      for(let i = 0; i < (index + 1); i++) {
+          newElement.push(letter.toLowerCase())
+      }
+      newWord.push(newElement.join(""))
     })
-    return newWord
-  } else {
-    return s
-  }
+    console.log(newWord)
+  return newWord.join("-")
 }
