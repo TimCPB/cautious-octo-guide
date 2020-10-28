@@ -9,4 +9,7 @@ describe("accum", function() {
   it ("returns 'A-Aa' when given 'AA'", function(){
     expect(accum("AA")).toEqual("A-Aa")
   })
+  it ("returns 'B-Bb' when given 'BB'", function(){
+    expect(accum("BB")).toEqual("B-Bb")
+  })
 })
