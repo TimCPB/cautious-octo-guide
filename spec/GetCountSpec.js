@@ -8,4 +8,7 @@ describe("GetCount", function() {
     it("Counts the letter i", function() {
         expect(getCount("i")).toEqual(1)
     })
+    it("Counts the letter o", function() {
+        expect(getCount("o")).toEqual(1)
+    })
 })
