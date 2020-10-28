@@ -7,6 +7,8 @@ function getCount(str) {
         vowelsCount++
     } else if(str === "i") {
         vowelsCount++
+    } else if(str === "o") {
+        vowelsCount++
     }
     
     return vowelsCount;
