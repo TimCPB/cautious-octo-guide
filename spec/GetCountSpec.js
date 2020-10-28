@@ -11,4 +11,7 @@ describe("GetCount", function() {
     it("Counts the letter o", function() {
         expect(getCount("o")).toEqual(1)
     })
+    it("Counts the letter u", function() {
+        expect(getCount("u")).toEqual(1)
+    })
 })
