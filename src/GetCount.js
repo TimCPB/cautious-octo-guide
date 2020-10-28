@@ -8,11 +8,8 @@ function getCount(str) {
             vowelsCount++
         }
     })
-
-    
-    
     return vowelsCount;
-  }
+}
 
       // if(str === "a") {
     //     vowelsCount++

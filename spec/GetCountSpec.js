@@ -19,5 +19,7 @@ describe("GetCount", function() {
     })
     it("counts a vowel from a string of multiple letters", function(){
         expect(getCount("ab")).toEqual(1)
+        expect(getCount("aa")).toEqual(2)
+        expect(getCount("abracadabra")).toEqual(5)
     })
 })
