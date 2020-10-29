@@ -1,3 +1,3 @@
 function sumDigits(num) {
-    return num
+    return Array.from(String(num), Number)
 }
