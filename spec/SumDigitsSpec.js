@@ -1,3 +1,8 @@
 function sumDigits(num) {
-    return Array.from(String(num), Number)
+    var array = Array.from(String(num), Number)
+    var sum = 0
+    array.forEach(digit => {
+        sum += digit
+    })
+    return sum
 }
