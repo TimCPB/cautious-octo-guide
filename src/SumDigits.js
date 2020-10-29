@@ -8,4 +8,8 @@ describe ("SumDigits", function() {
         expect(sumDigits(10)).toEqual(1)
         expect(sumDigits(99)).toEqual(18)
     })
+
+    it ("converts negative integers to positive", function() {
+        expect(sumDigits(-32)).toEqual(5)
+    })
 })
