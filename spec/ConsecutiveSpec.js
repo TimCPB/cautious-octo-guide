@@ -5,6 +5,6 @@ describe ("Consecutive", function() {
     })
 
     it("returns true when given numbers appear consecutively", function() {
-        expect(consecutive([1, 3, 5, 7], 3, 1)).toEqual(true)
+        expect(consecutive([1, 3, 5, 7], 1, 3)).toEqual(true)
     })
 })
