@@ -1,3 +1,4 @@
 function consecutive(array, a, b) {
-    return "hello"
+    let result = false
+    return result
 }
