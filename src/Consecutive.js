@@ -3,6 +3,8 @@ function consecutive(array, a, b) {
     array.forEach((letter, index) => {
         if (letter === a && array[index + 1] === b) {
             result = true
+        } else if (letter === a && array[index - 1] === b) {
+            result = true
         }
     });
     return result
