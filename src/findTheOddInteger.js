@@ -1,17 +1,11 @@
-function oddInteger(array){
+function oddInteger(A){
   let oddInteger = ''
-  array.forEach(integer => {
-    let value = integer
+  A.forEach(integer => {
     let count = 0
-    array.forEach(number => {
-      if(number === value){
-        count += 1
-        console.log(`count for ${number} - ${count}`)
-      }
+    A.forEach(number => {
+      if(number === integer) count += 1
     })
-    if (count % 2 !== 0) {
-      oddInteger = integer
-    }
+    if (count % 2 !== 0) oddInteger = integer
   })
   return oddInteger
 }

@@ -9,5 +9,6 @@ describe ("oddInteger", function(){
 
   it ("returns the odd integer from a long array of integers", function(){
     expect(oddInteger([1,1,1,1,1,1,10,10,10,1,1])).toEqual(10)
+    expect(oddInteger([1,1,2,-2,5,2,4,4,-1,-2,5])).toEqual(-1)
   })
 })
