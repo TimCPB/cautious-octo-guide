@@ -9,7 +9,7 @@ function oddInteger(array){
         console.log(`count for ${number} - ${count}`)
       }
     })
-    if (count === 1) {
+    if (count % 2 !== 0) {
       oddInteger = integer
     }
   })
