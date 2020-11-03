@@ -6,4 +6,8 @@ describe ("oddInteger", function(){
   it ("returns the odd integer when given 3 integers", function(){
     expect(oddInteger([1,2,2])).toEqual(1)
   })
+
+  it ("returns the odd integer from a long array of integers", function(){
+    expect(oddInteger([1,1,1,1,1,1,10,10,10,1,1])).toEqual(10)
+  })
 })
