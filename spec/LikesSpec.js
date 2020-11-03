@@ -15,4 +15,8 @@ describe ("Likes", function() {
     it("explains that three people have liked a post", function() {
         expect(likes(['Max', 'John', 'Mark'])).toEqual('Max, John and Mark like this')
     })
+
+    it("explains that four people have likes a post", function(){
+        expect(likes(["Alex", "Jacob", "Mark", "Max"])).toEqual('Alex, Jacob and 2 others like this')     
+    })
 })
