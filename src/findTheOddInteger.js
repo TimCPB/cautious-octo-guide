@@ -1,3 +1,13 @@
 function oddInteger(array){
-  return 10
+  
+  array.forEach(integer => {
+    let value = integer
+    let count = 0
+    array.forEach(number => {
+      if(number === value){
+        count += 1
+      }
+    })
+  })
+  return count
 }
