@@ -1,9 +1,9 @@
-function consecutive(array, a, b) {
+function consecutive(arr, a, b) {
     let result = false
-    array.forEach((letter, index) => {
-        if (letter === a && array[index + 1] === b) {
+    arr.forEach((letter, index) => {
+        if (letter === a && arr[index + 1] === b) {
             result = true
-        } else if (letter === a && array[index - 1] === b) {
+        } else if (letter === a && arr[index - 1] === b) {
             result = true
         }
     });
