@@ -1,0 +1,3 @@
+describe ("oddInteger", function(){
+  
+})
