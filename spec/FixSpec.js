@@ -4,4 +4,8 @@ describe ("Fix", function(){
         expect(fix("")).toEqual("");
     })
 
+    it("capitalizes the first letter of a paragraph", function(){
+        expect(fix("hi.")).toEqual("Hi.");
+    })
+
 })
