@@ -3,7 +3,7 @@ const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m
 function solve(arr){
     let word = arr[0]
     let count = 0
-    word.split("").forEach((letter, index) => {
+    word.toLowerCase().split("").forEach((letter, index) => {
         if (letter === alphabet[index]) count++
         console.log(letter, index, alphabet[index])
     });
