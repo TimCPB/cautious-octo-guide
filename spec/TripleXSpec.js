@@ -6,5 +6,6 @@ describe ("tripleX", function(){
 
     it("only returns true if xxx is the first instance of x in a string", function() {
         expect(tripleX("softx kitty, warm kitty, xxxxx")).toEqual(false)
+        expect(tripleX("softX kitty, warm kitty, xxxxx")).toEqual(true)
     })
 })

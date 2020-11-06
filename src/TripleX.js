@@ -1,3 +1,3 @@
 function tripleX(str){
-    if(str.includes("xxx")) return true
+    return str.indexOf("x") === str.indexOf("xxx")
 }
