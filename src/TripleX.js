@@ -1,3 +1,3 @@
 function tripleX(str){
-    return str
+    if(str.includes("xxx")) return true
 }
