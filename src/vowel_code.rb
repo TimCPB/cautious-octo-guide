@@ -1,17 +1,24 @@
 def encode(s)
 
-    if s == 'a'
-        "1"
-    elsif s == 'e'
-        '2'
-    elsif s == 'i'
-        '3'
-    elsif s == 'o'
-        '4'
-    elsif s == 'u'
-        '5'
-    else
-        s
-    end
+    array = s.split('')
+
+    encoded_array = array.map { |letter| 
+
+        if letter == 'a'
+            "1"
+        elsif letter == 'e'
+            '2'
+        elsif letter == 'i'
+            '3'
+        elsif letter == 'o'
+            '4'
+        elsif letter == 'u'
+            '5'
+        else
+            letter
+        end
+    }
+
+    encoded_array.join('')
 
 end

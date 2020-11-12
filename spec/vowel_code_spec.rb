@@ -17,4 +17,8 @@ describe "encode" do
         expect(encode('u')).to eq('5')
     end
 
+    it "replaces 'a' with 1 in a string of multiple letters" do
+        expect(encode('ab')).to eq('1b')
+    end
+
 end
