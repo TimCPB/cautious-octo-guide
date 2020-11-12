@@ -1,19 +1,15 @@
 def encode(s)
 
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    numbers = ['1', '2', '3', '4', '5']
+
     array = s.split('')
 
     encoded_array = array.map { |character| 
 
-        if character == 'a'
-            "1"
-        elsif character == 'e'
-            '2'
-        elsif character == 'i'
-            '3'
-        elsif character == 'o'
-            '4'
-        elsif character == 'u'
-            '5'
+        if vowels.include?(character)
+            index = vowels.index(character)
+            numbers[index]
         else
             character
         end
