@@ -2,23 +2,48 @@ def encode(s)
 
     array = s.split('')
 
-    encoded_array = array.map { |letter| 
+    encoded_array = array.map { |character| 
 
-        if letter == 'a'
+        if character == 'a'
             "1"
-        elsif letter == 'e'
+        elsif character == 'e'
             '2'
-        elsif letter == 'i'
+        elsif character == 'i'
             '3'
-        elsif letter == 'o'
+        elsif character == 'o'
             '4'
-        elsif letter == 'u'
+        elsif character == 'u'
             '5'
         else
-            letter
+            character
         end
     }
 
     encoded_array.join('')
+
+end
+
+def decode(s)
+
+    array = s.split('')
+
+    decoded_array = array.map { |character| 
+
+        if character == '1'
+            "a"
+        elsif character == '2'
+            'e'
+        elsif character == '3'
+            'i'
+        elsif character == '4'
+            'o'
+        elsif character == '5'
+            'u'
+        else
+            character
+        end
+    }
+
+    decoded_array.join('')
 
 end
