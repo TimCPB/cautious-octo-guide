@@ -6,4 +6,8 @@ describe "up_array" do
         expect(up_array([4])).to eq([5])
     end
 
+    it "returns an array that correesponds to the sum of original array + 1" do
+        expect(up_array([4,3,2,5])).to eq([4,3,2,6])
+    end
+
 end
