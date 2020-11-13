@@ -11,8 +11,8 @@ describe "up_array" do
     end
 
 
-    it "returns an array that correesponds to the sum of original array + 1" do
-        expect(up_array([4,3,2,5])).to eq([4,3,2,6])
+    it "returns nil if the array contains a non-integer" do
+        expect(up_array([4,3,2,-5])).to eq(nil)
     end
 
 end
