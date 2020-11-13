@@ -15,4 +15,8 @@ describe "up_array" do
         expect(up_array([4,3,2,-5])).to eq(nil)
     end
 
+    it "adds one to the sum of the array" do
+        expect(up_array([4,3,2,9])).to eq([4,3,3,0])
+    end
+
 end
