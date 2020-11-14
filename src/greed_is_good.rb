@@ -29,18 +29,26 @@ def score( dice )
         score += 50
     elsif one_count == 3
         score += 1000
-    elsif two_count == 3
+    elsif two_count >= 3
         score += 200
-    elsif three_count == 3
+    elsif three_count >= 3
         score += 300
-    elsif four_count == 3
+    elsif four_count >= 3
         score += 400
     elsif five_count == 3
         score += 500
-    elsif six_count == 3
+    elsif six_count >= 3
+        score += 600
+    elsif one_count == 4
+        score += 1100
+    elsif five_count == 4
+        score += 550
+    elsif one_count == 5
+        score += 1200
+    elsif five_count == 5
         score += 600
     end
 
     return score
-    
+
 end

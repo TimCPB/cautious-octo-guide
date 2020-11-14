@@ -19,4 +19,15 @@ describe "Score" do
         expect(score([2, 2, 2, 3, 4])).to eq(200)
     end
 
+    it "returns the correct score for four or five 2s, 3s, 4s or 6s" do
+        expect(score([4, 4, 4, 3, 4])).to eq(400)
+    end
+
+    it "returns the correct score for four or five 1s or 5s" do
+        expect(score([1, 1, 1, 3, 1])).to eq(1100)
+        expect(score([5, 5, 5, 3, 5])).to eq(550)
+        expect(score([1, 1, 1, 1, 1])).to eq(1200)
+        expect(score([5, 5, 5, 5, 5])).to eq(600)
+    end
+
 end
