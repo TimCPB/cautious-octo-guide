@@ -10,4 +10,7 @@ describe "List" do
         expect(list([{name: 'Bart'},{name: 'Lisa'}])).to eq('Bart & Lisa')
     end
 
+    it "formats a hash containing three names" do
+        expect(list([{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}])).to eq('Bart, Lisa, Maggie, Homer & Marge')
+    end
 end
