@@ -17,6 +17,7 @@ describe "Score" do
         expect(score([4, 4, 4, 2, 6])).to eq(400)
         expect(score([3, 3, 3, 2, 6])).to eq(300)
         expect(score([2, 2, 2, 3, 4])).to eq(200)
+        expect(score([2, 2, 2, 1, 4])).to eq(300)
     end
 
     it "returns the correct score for four or five 2s, 3s, 4s or 6s" do
