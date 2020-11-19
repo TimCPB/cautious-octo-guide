@@ -1,15 +1,15 @@
-require '../src/reverse_parentheses.rb'
+# require '../src/reverse_parentheses.rb'
 
-describe "list" do
+# describe "list" do
 
-    it "solves the basic tests" do
-        expect(solve(")()(")).to eq(2)
-        expect(solve("((()")).to eq(1)
-        expect(solve("(((")).to eq(-1)
-        expect(solve("((()")).to eq(1)
-        expect(solve("())()))))()()(")).to eq(4)
-    end
+#     it "solves the basic tests" do
+#         expect(solve(")()(")).to eq(2)
+#         expect(solve("((()")).to eq(1)
+#         expect(solve("(((")).to eq(-1)
+#         expect(solve("())(((")).to eq(3)
+#         expect(solve("())()))))()()(")).to eq(4)
+#     end
 
-end
+# end
 
         
