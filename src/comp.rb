@@ -1,3 +1,3 @@
 def comp(array1, array2)
-    true
+    array1[0] == Math.sqrt(array2[0])
 end
