@@ -7,4 +7,13 @@ describe "comp" do
         expect(comp([9], [140])).to eq(false)
     end
 
+    it "compares all elements in b to the elements of the same index in a" do
+        expect(comp([12, 10], [144, 100])).to eq(true)
+        expect(comp([10, 9], [100, 140])).to eq(false)
+    end
+
+    it "compares all elements in b and a regardless of order" do
+        expect(comp([12, 5, 10], [144, 100, 25])).to eq(true)
+    end
+
 end
