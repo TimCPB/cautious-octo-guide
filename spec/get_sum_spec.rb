@@ -4,6 +4,10 @@ describe "get_sum" do
 
     it "returns the sum of two consecutive numbers" do
         expect(get_sum(1,2)).to eq(3)
-    end
+		end
+		
+		it "sums all numbers between two non-consecutive numbers" do
+			expect(get_sum(1,3)).to eq(6)
+		end
 
 end
