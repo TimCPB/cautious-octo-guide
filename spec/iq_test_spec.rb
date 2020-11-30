@@ -10,5 +10,9 @@ describe "IQ Test" do
     expect(iq_test("2 4 7 8 10")).to eq(3)
   end
 
+  it "picks out the even number from an array of odd numbers" do
+    expect(iq_test("1 2 1 1")).to eq(2)
+  end
+
 end
 
