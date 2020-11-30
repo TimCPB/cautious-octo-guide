@@ -1,8 +1,3 @@
 def iq_test(numbers)
-  array = numbers.split(" ")
-  array.each_with_index do |num,index|
-    if num.to_i % 2 != 0
-      return index +1
-    end
-  end
+  numbers.split(" ").each_with_index { |num,index| return index +1 if num.to_i % 2 != 0 }
 end
