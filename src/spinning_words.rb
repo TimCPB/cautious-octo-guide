@@ -1,3 +1,7 @@
 def spinWords(string)
-  return string
+  if string.length < 5
+   string
+  else 
+    string.reverse
+  end
 end
